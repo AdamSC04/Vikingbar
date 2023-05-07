@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Vikingbar</title>
 </head>
 <body>
@@ -14,25 +15,67 @@
                 <h1>Vikingbar</h1>
                 <h2>Bar & Restaurang</h2>
                 <div class="buttonSec">
-                    <button>Meny</button>
+                    <button id="menuButton">Meny</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="daily">
-        <img src="/images/image1.png" class="image1">
+        <img src="images/image1.png" class="image1">
         <div class="daily-list">
             <p class="daily-header">Dagens</p>
-            <p class="daily-item">Måndag</p>
-            <p class="daily-item">Tisdag</p>
-            <p class="daily-item">Onsdag</p>
-            <p class="daily-item">Torsdag</p>
-            <p class="daily-item">Fredag</p>
-            <p class="daily-item">Lördag</p>
-            <p class="daily-item">Söndag</p>
+            <div class="daily-item">
+                <button class="open-touch">Måndag</button>
+                <div class="daily-item-dropdown">
+                    <button class="closeDropdown">Stäng</button>
+                    <p>LUNCH STÄNGT-1a MAJ.</p>
+                </div>
+            </div>
+            <div class="daily-item">
+                <button class="open-touch">Tisdag</button>
+                <div class="daily-item-dropdown">
+                    <button class="closeDropdown">Stäng</button>
+                    <p>Pocherad fisk med senapssås, kokt potatis & rivna morötter</p><p class="price">Pris: 115kr</p>
+                </div>
+            </div>
+            <div class="daily-item">
+                <button class="open-touch">Onsdag</button>
+                <div class="daily-item-dropdown">
+                    <button class="closeDropdown">Stäng</button>
+                    <p>Oxfärsbiff med gräddsås, lingon & pressgurka</p><p class="price">Pris: 115kr</p>
+                </div>
+            </div>
+            <div class="daily-item">
+                <button class="open-touch">Torsdag</button>
+                <div class="daily-item-dropdown">
+                    <button class="closeDropdown">Stäng</button>
+                    <p>Marinerad kycklingfilé med klyftpotatis & tzatziki</p><p class="price">Pris: 115kr</p>
+                </div>
+            </div>
+            <div class="daily-item">
+                <button class="open-touch">Fredag</button>
+                <div class="daily-item-dropdown">
+                    <button class="closeDropdown">Stäng</button>
+                    <p>Wallenbergare med potatismos, gröna ärtor & skiratsmör</p><p class="price">Pris: 115kr</p>
+                </div>
+            </div>
+            <div class="daily-item">
+                <button class="open-touch">Dagens Alternativ</button>
+                <div class="daily-item-dropdown">
+                    <button class="closeDropdown">Stäng</button>
+                    <p>Pytt i panna, Lasagne & Spagetti bolognese</p><p class="price">Pris: 115kr</p>
+                </div>
+            </div>
+            <div class="daily-item">
+                <button class="open-touch">Salladsbord</button>
+                <div class="daily-item-dropdown">
+                    <button class="closeDropdown">Stäng</button>
+                    <p class="price">Pris: 100kr</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="menu">
+    <div class="menu" id="menu">
         <div class="header">
             <p class="headertext">A la carte</p>
         </div>
@@ -43,10 +86,10 @@
                 <p class="menu-item">Räkmacka<span>159kr</span></p>
                 <p class="menu-item">Nachotallrik<span>149kr</span></p>
             </div>
-            <img src="/images/image2.png" class="image2">
+            <img src="images/image2.png" class="image2">
         </div>
         <div class="section">
-            <img src="/images/image3.png" class="image3">
+            <img src="images/image3.png" class="image3">
         </div>
     </div>
     <div class="events">
@@ -58,11 +101,11 @@
                 <p class="events-item">Shuffleboard - 70kr/h</p>
                 <p class="events-item">Något....</p>
             </div>
-            <img src="/images/image4.png" class="image4">
+            <img src="images/image4.png" class="image4">
         </div>
     </div>
     <div class="pool">
-        <img src="/images/image5.png" class="image5">
+        <img src="images/image5.png" class="image5">
         <div class="section poolsection">
             <div class="header">
                 <p class="headertext">Biljard</p>
@@ -80,7 +123,7 @@
         <div class="topbar">
             <div class="header">
                 <p class="headertext">Dart</p>
-                <img src="/images/image6.png" class="image6">
+                <img src="images/image6.png" class="image6">
             </div>
         </div>
         <div class="section-dartmain">
@@ -90,7 +133,11 @@
         </div>
     </div>
     <div class="bottombar">
-        <img src="/images/icon1.png" class="icon1">
+        <img src="images/icon1.png" class="icon1">
+        <img src="images/icon2.png" class="icon2">
+        <img src="images/icon3.png" class="icon3">
+        <img src="images/icon4.png" class="icon4">
+        <img src="images/icon5.png" class="icon5">
     </div>
 </body>
 </html>
